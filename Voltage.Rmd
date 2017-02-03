@@ -42,7 +42,7 @@ and currents and the port card voltages may be our best chance at knowing what t
 consumption is on the detector.
 
 
-```{r setup, include=False}
+```{r setup, include=TRUE}
 backer<-read.table('Readbacker_1283.dat')
 naming<-read.table('naming.dat')
 colnames(naming)[2]="ROC ID"
