@@ -271,5 +271,6 @@ for( i in 1:length(Everything$isOdd)){
 
 Everything$`Diff_Vd_DCU* means. (V)`<-(Everything$`Vd_final DCU* meas. (V)`-Everything$V_Digi)
 Everything$`Diff_Va_DCU* means. (V)`<-(Everything$`Va_final DCU* meas. (V)`-Everything$V_Ana)
-write.table(Everything, file='everything.csv')
+
+write.table(Everything, file='everything.csv', sep=',', quote = FALSE, col.names = NA)
 plot(Everything$`ROC ID`,Everything$`Diff_Vd_DCU* means. (V)`, xlab='ROC ID', ylab='Voltage drop between portcard voltage and module, Vd(V)')
