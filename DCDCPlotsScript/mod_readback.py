@@ -123,7 +123,7 @@ for i in range(1,len(RB_ROC_LIST)):
          print 'Module ' + modTemp + ' values unphysical, likely disconnected'
 
 for i in range (0,len(RB_MOD_LIST)):
-   print RB_MOD_LIST[i]
+   print str(i) +  '   ' + str(RB_MOD_LIST[i])
 
 INDATA_MOD1.close()
 INDATA_MOD2.close()
