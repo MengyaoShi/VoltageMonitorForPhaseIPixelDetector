@@ -26,9 +26,6 @@ def returnCombROC(roc):
     else:
         return (15 - roc)
 
-for i in range(0,16):
-    print 'ROC: ' + str(i) + '   Comb ROC: ' + str(returnCombROC(i))
-
 #CREATE ROC LIST
 RB_ROC_LIST = []
 for line1 in INDATA_MOD1:
