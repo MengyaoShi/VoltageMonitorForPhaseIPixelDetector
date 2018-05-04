@@ -48,7 +48,6 @@ VALS = ['Vd','Va','Vdr','Var','Vbg','VbgCor','dose','VdCor','VaCor','VdrCor','Va
 abrevVALS = ['Vd','Va','Vdr','Var','Vbg','VbgCor','dose','VdCor','VaCor']
 DISKS = ['1','2','3']
 MEAS = ['May','Jul','Aug','Sept','Dec']
-#MEAS = ['Mar']
 
 valINDEX = {'Vd': 9, 'Va': 10, 'Vdr': 4, 'Var': 5, 'Vbg': 7, 'VbgCor': 11, 'dose': 12, 'VdCor': 13, 'VaCor': 14, 'VdrCor': 15, 'VarCor': 16, 'VbgFullCor': 17, 'CorVdr': 18, 'CorVar': 19, 'CorVbg': 20}
 lumINDEX = {'May': 0.0, 'Jul': 6.3, 'Aug': 18.1, 'Sept': 24.2, 'Oct': 40.73, 'Dec': 49.98, 'Mar': 49.98}
