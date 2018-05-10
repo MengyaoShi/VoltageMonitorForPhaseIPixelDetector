@@ -6,7 +6,10 @@ To see values as a function of ROC (and combined averages ordered by radius), ru
 
        python mod_readback_simple_ROC.py
 
-The script will loop through the list of months in the code, reading Readbacker_[month].dat. New months must be added to the list. Outputs are plots_[month].root.
+The script will loop through the list of months in the code, reading Readbacker_[month].dat. New months must be added to the list. Outputs are plots_[month].root. 
+To use the plots_[month].root files and make plots over radius for all monthly measurements, run VvTimePlots.py:
+
+       python VvTimePlots.py
 
 To see voltages as a function of BLD, run mod_readback_simple_BLD.py with the .dat file as arguement:
 
