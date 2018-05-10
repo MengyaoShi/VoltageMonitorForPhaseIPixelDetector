@@ -2,11 +2,11 @@
 Vd and Va plots by ROC or BLD 
 ------------------
 
-To see collect values as a function of ROC (and combined ROC ordered by radius), run mod_readback_simple_ROC.py:
+To see values as a function of ROC (and combined averages ordered by radius), run mod_readback_simple_ROC.py:
 
        python mod_readback_simple_ROC.py
 
-The script will loop through list of months, reading Readbacker_[month].dat. Change list to add new month, or run on just one file. Outputs are plots_[month].root unless changed in the script.
+The script will loop through the list of months in the code, reading Readbacker_[month].dat. New months must be added to the list. Outputs are plots_[month].root.
 
 To see voltages as a function of BLD, run mod_readback_simple_BLD.py with the .dat file as arguement:
 
