@@ -12,7 +12,8 @@ from ROOT import *
 gStyle.SetOptStat(0)
 
 RNGs = ["1","2"]
-ADs = ["Vd","Va","Vdr","Var","Vbg","VbgCor","dose","VdCor","VaCor","VdrCor","VarCor","VbgFullCor","CorVdr","CorVar","CorVbg"]
+#ADs = ["Vd","Va","Vdr","Var","Vbg","VbgCor","dose","VdCor","VaCor","VdrCor","VarCor","VbgFullCor","CorVdr","CorVar","CorVbg"]
+ADs = ["Vd","Va","Vdr","Var","Vbg","VbgCor","dose","VdCor","VaCor"]
 
 CorAD = ["VdCor","VaCor","VdrCor","VarCor","VbgFullCor"]
 
