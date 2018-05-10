@@ -2,17 +2,18 @@
 Vd and Va plots by ROC or BLD 
 ------------------
 
-To see voltages as a function of ROC (and combined ROC ordered by radius), run mod_readback_simple_ROC.py with the .dat file as arguement:
+To see collect values as a function of ROC (and combined ROC ordered by radius), run mod_readback_simple_ROC.py:
 
-       python mod_readback_simple_ROC.py Readbacker.dat
+       python mod_readback_simple_ROC.py
+
+The script will loop through list of months, reading Readbacker_[month].dat. Change list to add new month, or run on just one file. Outputs are plots_[month].root unless changed in the script.
 
 To see voltages as a function of BLD, run mod_readback_simple_BLD.py with the .dat file as arguement:
 
        python mod_readback_simple_BLD.py Readbacker.dat
 
-Output is plots.root unless changed in the script. 
 __________________
-Comprehensive Voltages Plots
+Comprehensive Voltages Plots (very old, depends on voltages recorded by hand when HC is outside detector)
 ------------------
 
 Execute mod_readback.py to create new everything.csv with DCDC voltages added to sheet. The script also creates it's own abridged list of values and uses it to create plots of the three main measurements. 
