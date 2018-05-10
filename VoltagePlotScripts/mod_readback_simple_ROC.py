@@ -29,6 +29,8 @@ DividoGram = TH1F("DividoGram", "threes", 8 ,0 ,8)
 for i in range (0,9):
     DividoGram.SetBinContent(i,3.)
 
+debug = 0
+
 C_R1 = 22.7
 C_R2 = 22.7
 
@@ -198,25 +200,27 @@ for M in MEAS:
     for i in range (0,9):
         DividoGram.SetBinContent(i,3.)
 
-    #print "  BAD ROC: " + str(badCount)
-    #print " GOOD ROC: " + str(goodCount)
-    #print "TOTAL ROC: " + str(totalCount)
+    #used for checking bad connections, debugging
+    if debug == 1:
+        print "  BAD ROC: " + str(badCount)
+        print " GOOD ROC: " + str(goodCount)
+        print "TOTAL ROC: " + str(totalCount)
 
-    for m in tempModZero:
-        print m + '  ADC Value = zero'
-    for m in tempModIdent:
-        print m + '  identical ADC values ( < 255)'
-    for m in tempModHi:
-        print m + '  ADC values identical and too high ( > 255)'
-    for m in tempModUsed:
-        print m + '  Valid'
-    for m in tempModLow:
-        print m + '  Low Va ADC( <30 )'
+        for m in tempModZero:
+            print m + '  ADC Value = zero'
+        for m in tempModIdent:
+            print m + '  identical ADC values ( < 255)'
+        for m in tempModHi:
+            print m + '  ADC values identical and too high ( > 255)'
+        for m in tempModUsed:
+            print m + '  Valid'
+        for m in tempModLow:
+            print m + '  Low Va ADC( <30 )'
 
     p.cd()
     for ADC in ADCs:
         adc_Histo = TH1F(ADC+"HistoByLocation", ADC+"HistoByLocation", 10600 ,0 ,10600)
-        print "ROC List Length: " + str(len(RB_ROC_LIST))
+        #print "ROC List Length: " + str(len(RB_ROC_LIST))
         for i in range(1,len(RB_ROC_LIST)):
             adc_Histo.SetBinContent(int(RB_ROC_LIST[i][0])+1,RB_ROC_LIST[i][ADCIndex[ADC]])
         adc_Histo.Write(ADC+"HistoByLocation")
